@@ -15,4 +15,8 @@ The other platforms were also added. The loop was created to get contineous plat
 - The code is present in Github
 - The live site link is given below
 ### Executing Program
-- 
+- Just click the link https://piyushoutthere-spec.github.io/doodle/
+## Help
+- Normal browsers like chrome and Edge are recommended
+## License
+- Made for personal use!
