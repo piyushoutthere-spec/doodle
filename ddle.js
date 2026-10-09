@@ -22,7 +22,7 @@ let doodler={
 // phy
 let velocityX= 0;
 let velocityY= 0;// jump speed
-let initialVelocityY= -6; // starting V
+let initialVelocityY= -8; // starting V
 let gravity = 0.4;
 
 // platforms
@@ -112,11 +112,11 @@ function update(){
 }
 function moveDoodler(e){
     if (e.code == "ArrowRight"|| e.code== "KeyD"){
-        velocityX=2;
+        velocityX=4;
         doodler.img= doodlerRightImg;
     }
     else if (e.code == "ArrowLeft"|| e.code == "KeyA"){
-        velocityX= -2;
+        velocityX= -4;
         doodler.img= doodlerLeftImg;
     }
     else if (e.code =="Space" && gameOver){
@@ -173,9 +173,9 @@ function placePlatforms(){
     }
 }
 
-function newPlatform() {
-    let randomX = Math.floor(Math.random()*boardwidth*3/4); //(0-1)*boardwidth*3/4
-        let platform = {
+function newPlatform(){
+     let randomX= Math.floor(Math.random()*boardwidth*3/4);
+     let platform = {
         img: platformImg,
         x: randomX,
         y: -platformHeight,
